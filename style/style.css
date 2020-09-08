@@ -90,7 +90,7 @@ p {
 
 .hero__content {
   width: 50%;
-  padding: 10px 30px;
+  padding: 50px 30px;
 }
 
 .hero__title {
@@ -139,24 +139,32 @@ p {
   margin: 0 1rem;
 }
 
+.hero__title {
+  font-size: 4rem;
+}
+
 @media screen and (max-width: 1440px) {
+}
+@media screen and (max-width: 980px) {
   .hero__content {
     padding: 10px 30px;
   }
-  body {
-    background-size: 150%;
+  .hero__title {
+    font-size: 2.8rem;
   }
 
+  body {
+    background-size: 120%;
+  }
 }
-
 @media screen and (max-width: 768px) {
   .hero__title {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 
   .hero__description {
-      font-size: 1.5rem;
-    }
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -183,7 +191,7 @@ p {
     background-size: 100%;
   }
   .header figure {
-    width: 200px;ñ
+    width: 200px;
     padding: 15px 0 30px 10px;
   }
 
@@ -191,7 +199,6 @@ p {
     width: 100%;
   }
 }
-
 
 @media screen and (max-width: 320px) {
   .hero__title {
