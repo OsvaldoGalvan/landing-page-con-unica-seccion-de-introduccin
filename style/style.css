@@ -53,6 +53,8 @@ html {
 body {
   background-color: var(--first-color);
   background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -92,20 +94,20 @@ p {
 }
 
 .hero__title {
-  font-size: 4rem;
+  font-size: 2.7rem;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   margin-bottom: 10px;
 }
 
 .hero__description {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .button {
   display: inline-block;
   background: white;
-  padding: 1.5rem 5rem;
+  padding: 1rem 7rem;
   border-radius: 25px;
   font-size: 1.8rem;
   color: var(--first-color);
@@ -137,40 +139,30 @@ p {
   margin: 0 1rem;
 }
 
-@media screen and (max-width: 1445px) {
+@media screen and (max-width: 1440px) {
   .hero__content {
     padding: 10px 30px;
   }
+  body {
+    background-size: 150%;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
   .hero__title {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
+
   .hero__description {
-    font-size: 1.5rem;
-  }
-  .button {
-    padding: 1rem 7rem;
-  }
+      font-size: 1.5rem;
+    }
 }
-@media screen and (max-width: 376px) {
-  body {
-    background-color: var(--first-color);
-    background-image: url("../images/bg-mobile.svg");
-    background-repeat: no-repeat;
-  }
-  .header figure {
-    width: 200px;
-    padding: 15px 0 30px 10px;
-  }
+
+@media screen and (max-width: 420px) {
   .hero {
     flex-direction: column;
     padding: 10px;
-  }
-
-  .hero figure {
-    width: 100%;
   }
 
   .hero__content {
@@ -182,5 +174,27 @@ p {
   .footer {
     justify-content: center;
     padding-top: 50px;
+  }
+
+  body {
+    background-color: var(--first-color);
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .header figure {
+    width: 200px;ñ
+    padding: 15px 0 30px 10px;
+  }
+
+  .hero figure {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .hero__title {
+    font-size: 2rem;
   }
 }
